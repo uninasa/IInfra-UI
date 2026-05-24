@@ -106,8 +106,11 @@ async function handleLogin() {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  justify-content: flex-end; /* 改为左对齐 */
+  padding-right: 7%; /* 距离左边的距离，可以改成具体数值如 100px */
+  background: url('/white.jpg') no-repeat;
+  background-size: cover;
+  background-position: right center; /* 背景图向右对齐，可以改成具体数值如 70% center 或 600px center */
 }
 
 .login-card {
